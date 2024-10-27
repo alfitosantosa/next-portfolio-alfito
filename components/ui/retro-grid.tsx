@@ -21,6 +21,7 @@ export default function RetroGrid({ className, angle = 65 }: { className?: strin
       </div>
 
       {/* Background Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent to-10% dark:from-black" />
     </div>
   );
 }
