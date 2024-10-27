@@ -7,7 +7,6 @@ import { SiInstagram } from "react-icons/si";
 import { FiLinkedin } from "react-icons/fi";
 import BlurIn from "@/components/ui/blur-in";
 import { Badge } from "@/components/ui/badge";
-import { AnimatedGridPatternDemo } from "@/components/animated-grid-patern-provider";
 import { RetroGridDemo } from "@/components/retro-grid-provider";
 
 // import ShinyButton from "@/components/ui/shiny-button";
