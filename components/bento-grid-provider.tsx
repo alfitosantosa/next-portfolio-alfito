@@ -1,7 +1,7 @@
 import { BellIcon, CalendarIcon, FileTextIcon, GlobeIcon, InputIcon } from "@radix-ui/react-icons";
 
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
-import ShinyButton from "./ui/shiny-button";
+// import ShinyButton from "./ui/shiny-button";
 import { ModeToggle } from "./theme-toggle";
 
 const features = [
@@ -66,9 +66,9 @@ export async function BentoDemo() {
           <BentoCard key={feature.name} {...feature} />
         ))}
       </BentoGrid>
-      <div className="pb-8 px-7">
+      {/* <div className="pb-8 px-7">
         <ShinyButton className="flex text-white w-full mx-auto font-[family-name:var(--font-geist-sans)] ">Contact Me</ShinyButton>
-      </div>
+      </div> */}
     </div>
   );
 }
