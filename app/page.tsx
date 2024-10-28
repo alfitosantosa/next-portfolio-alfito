@@ -9,7 +9,6 @@ import BlurIn from "@/components/ui/blur-in";
 import { Badge } from "@/components/ui/badge";
 import { RetroGridDemo } from "@/components/retro-grid-provider";
 import Link from "next/link";
-import { Loading } from "@/components/loading";
 
 // import ShinyButton from "@/components/ui/shiny-button";
 // import { SparklesTextDemo } from "@/components/sparkles-text-provider";
