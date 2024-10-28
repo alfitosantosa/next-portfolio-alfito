@@ -8,6 +8,8 @@ import { FiLinkedin } from "react-icons/fi";
 import BlurIn from "@/components/ui/blur-in";
 import { Badge } from "@/components/ui/badge";
 import { RetroGridDemo } from "@/components/retro-grid-provider";
+import Link from "next/link";
+import { Loading } from "@/components/loading";
 
 // import ShinyButton from "@/components/ui/shiny-button";
 // import { SparklesTextDemo } from "@/components/sparkles-text-provider";
@@ -35,14 +37,14 @@ export default function Home() {
               {/* <Image className="dark:invert" src="/wa.png" alt="Vercel logomark" width={20} height={20} /> */}
               Contact Me
             </a>
-            <a
+            <Link
+              href="/portfolio"
               className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-              href="\"
               target="_blank"
               rel="noopener noreferrer"
             >
               Read our portfolio
-            </a>
+            </Link>
           </div>
         </main>
         <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
