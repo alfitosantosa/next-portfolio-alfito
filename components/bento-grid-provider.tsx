@@ -1,4 +1,6 @@
 import { BellIcon, CalendarIcon, FileTextIcon, GlobeIcon, InputIcon } from "@radix-ui/react-icons";
+import { RiNextjsFill } from "react-icons/ri";
+import { FaReact } from "react-icons/fa";
 
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 // import ShinyButton from "./ui/shiny-button";
@@ -6,20 +8,20 @@ import { ModeToggle } from "./theme-toggle";
 
 const features = [
   {
-    Icon: FileTextIcon,
+    Icon: FaReact,
     name: "Klinik daarusyifa",
     description: "Fullstack klinik Management.",
     href: "/",
-    cta: "Order Now",
+    cta: "Preview",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
   },
   {
-    Icon: InputIcon,
+    Icon: RiNextjsFill,
     name: "Nextvul Cafe",
     description: "Search through all your files in one place.",
     href: "/",
-    cta: "Order Now",
+    cta: "Preview",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
   },
@@ -28,7 +30,7 @@ const features = [
     name: "Carevul",
     description: "Supports 100+ languages and counting.",
     href: "/",
-    cta: "Order Now",
+    cta: "Preview",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
   },
@@ -37,7 +39,7 @@ const features = [
     name: "Company Profile",
     description: "Use the calendar to filter your files by date.",
     href: "/",
-    cta: "Order Now",
+    cta: "Preview",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
   },
@@ -46,7 +48,7 @@ const features = [
     name: "Whatsapp Bot",
     description: "Get notified when someone shares a file or mentions you in a comment.",
     href: "/",
-    cta: "Order Now",
+    cta: "Preview",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
   },
