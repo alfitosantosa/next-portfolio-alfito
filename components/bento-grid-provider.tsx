@@ -5,51 +5,60 @@ import { FaReact } from "react-icons/fa";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 // import ShinyButton from "./ui/shiny-button";
 import { ModeToggle } from "./theme-toggle";
+import { SiPowerpages } from "react-icons/si";
+import { FaClinicMedical } from "react-icons/fa";
+import { FaHandHoldingMedical } from "react-icons/fa6";
+import { SiBuymeacoffee } from "react-icons/si";
 
 const features = [
   {
-    Icon: FaReact,
+    Icon: FaClinicMedical,
     name: "Klinik daarusyifa",
     description: "Fullstack klinik Management.",
     href: "https://klinik-daarusyifa.vercel.app/",
     cta: "Preview",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
+    tech: ["React Vite", "Bootstrap", "ExpressJs", "Prisma", "MongoDB", "Vercel"],
   },
   {
-    Icon: RiNextjsFill,
+    Icon: SiBuymeacoffee,
     name: "Nextvul Cafe",
-    description: "Search through all your files in one place.",
+    description: "Management system for your UMKM.",
     href: "https://nextvulcafe.netlify.app/",
     cta: "Preview",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
+    tech: ["React", "Next.js", "TypeScript", "Clerk Auth", "Tailwind CSS", "ShadCn", "Prisma", "PostgreSQL", "Neon DB", "Netlify"],
   },
   {
-    Icon: GlobeIcon,
+    Icon: FaHandHoldingMedical,
     name: "Carevul",
-    description: "Supports 100+ languages and counting.",
+    description: "Fullstack Telemedicine with chatbot.",
     href: "https://carevul-five.vercel.app/",
     cta: "Preview",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
+    tech: ["React Vite", "Bootstrap", "ExpressJs", "Prisma", "MongoDB", "Vercel","Firebase Realtime DB"],
   },
   {
-    Icon: CalendarIcon,
+    Icon: SiPowerpages,
     name: "Company Profile",
-    description: "Use the calendar to filter your files by date.",
+    description: "Landing page for information company.",
     href: "/",
     cta: "Preview",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+    tech: ["React", "Next.js", "Tailwind CSS", "ShadCn", "Vercel"],
   },
   {
     Icon: BellIcon,
     name: "Whatsapp Bot",
-    description: "Get notified when someone shares a file or mentions you in a comment.",
+    description: "Get notified when someone shares a file or mentions you in a WhatsApp Management System.",
     href: "/",
     cta: "Preview",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    tech: ["Python", "Twilio", "Flask", "Heroku"],
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
   },
 ];

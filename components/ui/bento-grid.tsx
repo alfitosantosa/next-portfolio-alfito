@@ -3,12 +3,13 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 const BentoGrid = ({ children, className }: { children: ReactNode; className?: string }) => {
   return <div className={cn("grid w-full auto-rows-[22rem] grid-cols-3 gap-4", className)}>{children}</div>;
 };
 
-const BentoCard = ({ name, className, background, Icon, description, href, cta }: { name: string; className: string; background: ReactNode; Icon: any; description: string; href: string; cta: string }) => (
+const BentoCard = ({ name, className, background, Icon, description, href, cta, tech }: { name: string; className: string; background: ReactNode; Icon: any; description: string; href: string; cta: string; tech: Array<string> }) => (
   <div
     key={name}
     className={cn(
@@ -25,6 +26,13 @@ const BentoCard = ({ name, className, background, Icon, description, href, cta }
       <Icon className="h-10 w-10 origin-left transform-gpu text-neutral-700 transition-all duration-300 ease-in-out group-hover:scale-75" />
       <h3 className="text-xl font-semibold text-neutral-700 dark:text-neutral-300">{name}</h3>
       <p className="max-w-lg text-neutral-400 text-xs font-[family-name:var(--font-geist-mono)]">{description}</p>
+      <div className="flex gap-2 flex-wrap">
+        {tech.map((t) => (
+          <Badge key={t} variant="outline" className="text-xs">
+            {t}
+          </Badge>
+        ))}
+      </div>
     </div>
 
     <div className={cn("pointer-events-none absolute bottom-0 flex w-full translate-y-10 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100")}>

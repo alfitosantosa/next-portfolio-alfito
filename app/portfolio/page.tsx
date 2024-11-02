@@ -1,11 +1,15 @@
 import { BentoDemo } from "@/components/bento-grid-provider";
-import ShinyButton from "@/components/ui/shiny-button";
+
+import Ripple from "@/components/ui/ripple";
 
 export default function Page() {
   return (
     <>
+      <div className="items-center justify-items-center"></div>
       <BentoDemo />
-      
+      <div className="">
+        <Ripple />
+      </div>
     </>
   );
 }
