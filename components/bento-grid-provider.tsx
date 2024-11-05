@@ -39,7 +39,7 @@ const features = [
     cta: "Preview",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
-    tech: ["React Vite", "Bootstrap", "ExpressJs", "Prisma", "MongoDB", "Vercel","Firebase Realtime DB"],
+    tech: ["React Vite", "Bootstrap", "ExpressJs", "Prisma", "MongoDB", "Vercel", "Firebase Realtime DB"],
   },
   {
     Icon: SiPowerpages,
@@ -69,7 +69,7 @@ export async function BentoDemo() {
       <div className="text-center mt-7">
         <ModeToggle />
       </div>
-      <div className="flex text-4xl font-bold p-6 ml-3 mt-3 mb-(-5)">
+      <div className="flex text-4xl font-bold pl-7 pt-2  mt-3 ">
         <p>Portfolio</p>
       </div>
       <BentoGrid className="lg:grid-rows-3 mx-auto p-7">
@@ -77,9 +77,6 @@ export async function BentoDemo() {
           <BentoCard key={feature.name} {...feature} />
         ))}
       </BentoGrid>
-      {/* <div className="pb-8 px-7">
-        <ShinyButton className="flex text-white w-full mx-auto font-[family-name:var(--font-geist-sans)] ">Contact Me</ShinyButton>
-      </div> */}
     </div>
   );
 }
