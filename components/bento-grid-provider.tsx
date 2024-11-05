@@ -1,9 +1,5 @@
-import { BellIcon, CalendarIcon, FileTextIcon, GlobeIcon, InputIcon } from "@radix-ui/react-icons";
-import { RiNextjsFill } from "react-icons/ri";
-import { FaReact } from "react-icons/fa";
-
+import { BellIcon } from "@radix-ui/react-icons";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
-// import ShinyButton from "./ui/shiny-button";
 import { ModeToggle } from "./theme-toggle";
 import { SiPowerpages } from "react-icons/si";
 import { FaClinicMedical } from "react-icons/fa";
@@ -11,6 +7,7 @@ import { FaHandHoldingMedical } from "react-icons/fa6";
 import { SiBuymeacoffee } from "react-icons/si";
 import ShinyButton from "./ui/shiny-button";
 import Link from "next/link";
+import { ParticlesDemo } from "./particles-provider";
 
 const features = [
   {
@@ -67,24 +64,27 @@ const features = [
 
 export async function BentoDemo() {
   return (
-    <div className="relative w-full h-[500px] lg:h-[800px] font-[family-name:var(--font-geist-sans)]">
-      <div className="text-center mt-7">
-        <ModeToggle />
+    <>
+      <ParticlesDemo />
+      <div className="relative w-full h-[500px] lg:h-[800px] font-[family-name:var(--font-geist-sans)]">
+        <div className="text-center mt-7">
+          <ModeToggle />
+        </div>
+        <div className="flex text-4xl font-bold pl-7 pt-2  mt-3 ">
+          <p>Portfolio</p>
+        </div>
+        <BentoGrid className="lg:grid-rows-3 mx-auto p-7">
+          {features.map((feature) => (
+            <BentoCard key={feature.name} {...feature} />
+          ))}
+        </BentoGrid>
+        <div className="relative text-center pb-6">
+          <Link href="/">
+            {" "}
+            <ShinyButton>Back Home</ShinyButton>
+          </Link>
+        </div>
       </div>
-      <div className="flex text-4xl font-bold pl-7 pt-2  mt-3 ">
-        <p>Portfolio</p>
-      </div>
-      <BentoGrid className="lg:grid-rows-3 mx-auto p-7">
-        {features.map((feature) => (
-          <BentoCard key={feature.name} {...feature} />
-        ))}
-      </BentoGrid>
-      <div className="relative text-center pb-6">
-        <Link href="/">
-          {" "}
-          <ShinyButton>Back Home</ShinyButton>
-        </Link>
-      </div>
-    </div>
+    </>
   );
 }
