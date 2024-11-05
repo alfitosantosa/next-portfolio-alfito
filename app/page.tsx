@@ -25,7 +25,7 @@ export default function Home() {
           {/* <SparklesTextDemo /> */}
           <BlurIn word="Hello, World!" className="text-4xl font-bold text-black dark:text-white" />
           <p className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-            Muhamad Alfito Santosa <Badge variant="outline">Next.js Developer</Badge>.
+            Muhamad Alfito Santosa <Badge variant="outline">Next.js Developer.</Badge>
           </p>
 
           <div className="flex gap-4 items-center flex-col sm:flex-row">
