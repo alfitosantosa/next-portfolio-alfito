@@ -9,6 +9,8 @@ import { SiPowerpages } from "react-icons/si";
 import { FaClinicMedical } from "react-icons/fa";
 import { FaHandHoldingMedical } from "react-icons/fa6";
 import { SiBuymeacoffee } from "react-icons/si";
+import ShinyButton from "./ui/shiny-button";
+import Link from "next/link";
 
 const features = [
   {
@@ -77,6 +79,12 @@ export async function BentoDemo() {
           <BentoCard key={feature.name} {...feature} />
         ))}
       </BentoGrid>
+      <div className="relative text-center pb-6">
+        <Link href="/">
+          {" "}
+          <ShinyButton>Back Home</ShinyButton>
+        </Link>
+      </div>
     </div>
   );
 }
