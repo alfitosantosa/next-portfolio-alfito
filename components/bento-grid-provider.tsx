@@ -8,6 +8,10 @@ import { SiBuymeacoffee } from "react-icons/si";
 import ShinyButton from "./ui/shiny-button";
 import Link from "next/link";
 import { ParticlesDemo } from "./particles-provider";
+import Image from "next/image";
+import carevulWeb from "@/public/carevul-web.png";
+import klnikDaarusyifaWeb from "@/public/klinik-daarusyifa-web.png";
+import nextvulCafe from "@/public/nextvulcafe-web.png";
 
 const features = [
   {
@@ -16,8 +20,8 @@ const features = [
     description: "Fullstack klinik Management.",
     href: "https://klinik-daarusyifa.vercel.app/",
     cta: "Preview",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
+    background: <Image className="absolute opacity-10" src={klnikDaarusyifaWeb} alt={""} />,
+    className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
     tech: ["React Vite", "Bootstrap", "ExpressJs", "Prisma", "MongoDB", "Vercel"],
   },
   {
@@ -26,7 +30,7 @@ const features = [
     description: "Management system for your UMKM.",
     href: "https://nextvulcafe.netlify.app/",
     cta: "Preview",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: <Image className="absolute opacity-10" src={nextvulCafe} alt={""} />,
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
     tech: ["React", "Next.js", "TypeScript", "Clerk Auth", "Tailwind CSS", "ShadCn", "Prisma", "PostgreSQL", "Neon DB", "Netlify"],
   },
@@ -36,8 +40,9 @@ const features = [
     description: "Fullstack Telemedicine with chatbot.",
     href: "https://carevul-five.vercel.app/",
     cta: "Preview",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
+    background: <Image className="absolute  opacity-10" src={carevulWeb} alt={""} />,
+    className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
+
     tech: ["React Vite", "Bootstrap", "ExpressJs", "Prisma", "MongoDB", "Vercel", "Firebase Realtime DB"],
   },
   {
@@ -46,7 +51,7 @@ const features = [
     description: "Landing page for information company.",
     href: "/",
     cta: "Preview",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: <Image className="absolute -right-20 -top-20 opacity-60" src={""} alt={""} />,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
     tech: ["React", "Next.js", "Tailwind CSS", "ShadCn", "Vercel"],
   },
@@ -56,7 +61,7 @@ const features = [
     description: "Get notified when someone shares a file or mentions you in a WhatsApp Management System.",
     href: "/",
     cta: "Preview",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: <Image className="absolute -right-20 -top-20 opacity-60" src={""} alt={""} />,
     tech: ["Python", "Twilio", "Flask", "Heroku"],
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
   },
