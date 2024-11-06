@@ -28,7 +28,7 @@ const BentoCard = ({ name, className, background, Icon, description, href, cta, 
       <p className="max-w-lg text-neutral-400 text-xs font-[family-name:var(--font-geist-mono)]">{description}</p>
       <div className="flex gap-2 flex-wrap">
         {tech.map((t) => (
-          <Badge key={t} variant="outline" className="text-xs">
+          <Badge key={t} variant="secondary" className="text-xs">
             {t}
           </Badge>
         ))}
